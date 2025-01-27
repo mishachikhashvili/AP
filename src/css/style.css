@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #494e5a;
+    --secondary-color: #293242;
+
+    --blue-1: #4c5c96;
+    --blue-2: #45558d;
+    --blue-3:#3f4e85;
+
+    --dunkel-1:#2e3141;
+    --dunkel-2:#353849;
+
+    --footer-1:#4d505b;
+    --footer-2:#353d4e;
+    --footer-3:#303749;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+
+h1 {
+    color: var(--primary-color);
+    font-family: 'Jura';
+    font-size: 50px;
+}

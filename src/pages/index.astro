@@ -1,11 +1,95 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import zwanzig from "../assets/images/20.jpg";
+import fünf from "../assets/images/5.jpg";
+import drei from "../assets/images/3.jpg";
 ---
 
 <Layout>
-	<Welcome />
+	<center><h1>GEORGIEN</h1></center>
+
+	<section class="flex justify-center p-[20px] m-[30px] gap-[50px]">
+		<div>
+			<h2>ssdsdsfdgdfhdhdh</h2>
+			<br />
+			<p class="w-[50rem]">
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+				harum voluptas nulla dolore fugiat maiores rem? Mollitia minus
+				eveniet ut quod nihil possimus laboriosam enim aliquid aliquam,
+				dolorum esse voluptatum illum quisquam quis autem aut. Modi
+				enim, voluptas laborum tempora saepe ut fugit at hic. Beatae eum
+				ipsam fuga rerum.
+			</p>
+			<br>
+			<a href="#weiterlesen">link</a>
+		</div>
+		<div>
+			<img
+				class="w-[200px] h-[200px] rounded-full"
+				src={zwanzig.src}
+				alt=""/>
+		</div>
+	</section>
+
+	<section class="flex justify-center p-[20px] m-[30px] gap-[50px]">
+		<div>
+			<img
+				class="w-[200px] h-[200px] rounded-full p-[20px] m-[30px] gap-[50px]"
+				src={fünf.src}
+				alt=""/>
+		</div>
+		<div>
+			<h2>ssdsdsfdgdfhdhdh</h2>
+			<br />
+			<p class="w-[50rem]">
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+				harum voluptas nulla dolore fugiat maiores rem? Mollitia minus
+				eveniet ut quod nihil possimus laboriosam enim aliquid aliquam,
+				dolorum esse voluptatum illum quisquam quis autem aut. Modi
+				enim, voluptas laborum tempora saepe ut fugit at hic. Beatae eum
+				ipsam fuga rerum.
+			</p>
+			<br>
+			<a href="#weiterlesen">link</a>
+		</div>
+	</section>
+
+	<section class="flex justify-center">
+		<div>
+			<h2>ssdsdsfdgdfhdhdh</h2>
+			<br />
+			<p class="w-[50rem]">
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+				harum voluptas nulla dolore fugiat maiores rem? Mollitia minus
+				eveniet ut quod nihil possimus laboriosam enim aliquid aliquam,
+				dolorum esse voluptatum illum quisquam quis autem aut. Modi
+				enim, voluptas laborum tempora saepe ut fugit at hic. Beatae eum
+				ipsam fuga rerum.
+			</p>
+			<br>
+			<a href="#weiterlesen">link</a>
+		</div>
+		<div>
+			<img
+				class="w-[200px] h-[200px] rounded-full"
+				src={drei.src}
+				alt=""/>
+		</div>
+	</section>
+
+	
+
+
 </Layout>
+
+<style>
+	h1 {
+		position: relative;
+		z-index: 9;
+		top: -740px;
+		color: rgb(194, 188, 188);
+		color:;
+		width: 10rem;
+		height: auto;
+	}
+</style>
