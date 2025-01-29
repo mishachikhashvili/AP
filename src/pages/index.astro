@@ -3,93 +3,128 @@ import Layout from "../layouts/Layout.astro";
 import zwanzig from "../assets/images/20.jpg";
 import fünf from "../assets/images/5.jpg";
 import drei from "../assets/images/3.jpg";
+import dk1 from "../assets/dk1.svg";
+import dk2 from "../assets/dk2.svg";
+import dk3 from "../assets/dk3.svg";
+import dk4 from "../assets/dk4.svg";
+
 ---
 
 <Layout>
-	<center><h1>GEORGIEN</h1></center>
+	<main class="">
+		<div class="bg-gray-900 text-white relative">
+			<!-- Inhaltselemente 1 -->
 
-	<section class="flex justify-center p-[20px] m-[30px] gap-[50px]">
-		<div>
-			<h2>ssdsdsfdgdfhdhdh</h2>
-			<br />
-			<p class="w-[50rem]">
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
-				harum voluptas nulla dolore fugiat maiores rem? Mollitia minus
-				eveniet ut quod nihil possimus laboriosam enim aliquid aliquam,
-				dolorum esse voluptatum illum quisquam quis autem aut. Modi
-				enim, voluptas laborum tempora saepe ut fugit at hic. Beatae eum
-				ipsam fuga rerum.
-			</p>
-			<br>
-			<a href="#weiterlesen">link</a>
-		</div>
-		<div>
-			<img
-				class="w-[200px] h-[200px] rounded-full"
-				src={zwanzig.src}
-				alt=""/>
-		</div>
-	</section>
+			<section class="relative bg-[#4c5c96] text-center text-white py-16">
+				<!-- Das Dreieck wird hier eingefügt  DK1-->
+				<img class="absolute top-[-100px] left-0 right-0 h-[100px] w-full"  src={dk1.src} alt="">
 
-	<section class="flex justify-center p-[20px] m-[30px] gap-[50px]">
-		<div>
-			<img
-				class="w-[200px] h-[200px] rounded-full p-[20px] m-[30px] gap-[50px]"
-				src={fünf.src}
-				alt=""/>
-		</div>
-		<div>
-			<h2>ssdsdsfdgdfhdhdh</h2>
-			<br />
-			<p class="w-[50rem]">
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
-				harum voluptas nulla dolore fugiat maiores rem? Mollitia minus
-				eveniet ut quod nihil possimus laboriosam enim aliquid aliquam,
-				dolorum esse voluptatum illum quisquam quis autem aut. Modi
-				enim, voluptas laborum tempora saepe ut fugit at hic. Beatae eum
-				ipsam fuga rerum.
-			</p>
-			<br>
-			<a href="#weiterlesen">link</a>
-		</div>
-	</section>
+				<div class="relative  container mx-auto px-4 md:flex md:flex-row-reverse">
+					<img
+						class="w-[16rem] h-[16rem] rounded-full object-cover mx-auto mb-4 md:mb-0"
+						src={zwanzig.src}
+						alt=""
+					/>
+					<div class="md:p-[5rem]">
+						<h2 class="text-xl font-bold">Magna Arcu Feugiat</h2>
+						<p class="mt-2">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Culpa eveniet nostrum unde, cupiditate
+							distinctio natus iste labore cumque porro
+							voluptatibus dolorum maiores recusandae quod
+							consequuntur voluptatum aspernatur minima enim
+							tenetur? Ipsum, provident repellendus? Voluptates
+							modi nostrum quo consequatur vero doloribus.
+						</p>
+						<button
+							class="mt-4 md:mb-1 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded"
+						>Learn More
+						</button>
+					</div>
+				</div>
+			</section>
 
-	<section class="flex justify-center">
-		<div>
-			<h2>ssdsdsfdgdfhdhdh</h2>
-			<br />
-			<p class="w-[50rem]">
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
-				harum voluptas nulla dolore fugiat maiores rem? Mollitia minus
-				eveniet ut quod nihil possimus laboriosam enim aliquid aliquam,
-				dolorum esse voluptatum illum quisquam quis autem aut. Modi
-				enim, voluptas laborum tempora saepe ut fugit at hic. Beatae eum
-				ipsam fuga rerum.
-			</p>
-			<br>
-			<a href="#weiterlesen">link</a>
-		</div>
-		<div>
-			<img
-				class="w-[200px] h-[200px] rounded-full"
-				src={drei.src}
-				alt=""/>
-		</div>
-	</section>
+			<!-- Inhaltselemente 2 -->
+			<section class="relative bg-[#45558d] text-center text-white py-16">
+				
+				<!-- Das Dreieck wird hier eingefügt DK2 -->
+				<img class="absolute top-[0px]  left-0 right-0 h-[100px] w-full  rotate-180 scale-y-[-1] "  src={dk2.src} alt="">
 
+
+				<div class="relative z-10 container mx-auto px-4 md:flex">
+					
+					<img
+						class="w-[16rem] h-[16rem] rounded-full object-cover mx-auto mb-4"
+						src={fünf.src}
+						alt=""
+					/>
+					<div class="md:p-[5rem]">
+						<h2 class="text-xl font-bold">Magna Arcu Feugiat</h2>
+						<p class="mt-2">
+							Lorem ipsum, dolor sit amet consectetur adipisicing
+							elit. Perferendis recusandae tenetur nulla
+							consequatur corrupti non nemo voluptas! Repellendus
+							aspernatur, distinctio ducimus, nisi nobis
+							accusantium placeat odio nesciunt quia laborum
+							dolore illo illum esse expedita eveniet quisquam
+							porro! Fuga, deleniti, quia molestias architecto,
+							explicabo aliquid assumenda aperiam pariatur
+							repudiandae laboriosam animi!
+						</p>
+						<button
+							class="mt-4 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded"
+							>Learn More
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- Inhaltselemente 3 -->
+
+			<section class="relative bg-[#3f4e85] text-center text-white py-16">
+
+				<!-- Das Dreieck wird hier eingefügt DK3 -->
+				<img class="absolute top-[-100px] left-0 right-0 h-[100px] w-full"  src={dk3.src} alt="">
+
+				<div class="relative z-10 container mx-auto px-4 md:flex md:flex-row-reverse">
+					<img
+						class="w-[16rem] h-[16rem] rounded-full object-cover mx-auto mb-4 md:mb-0"
+						src={drei.src}
+						alt=""
+					/>
+					<div class="md:p-[5rem]">
+						<h2 class="text-xl font-bold">Magna Arcu Feugiat</h2>
+						<p class="mt-2">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Facilis consectetur officiis dicta beatae modi
+							itaque doloribus alias fugit obcaecati temporibus,
+							rerum dolor laborum at nemo provident error sequi
+							eum facere quidem magni harum tenetur illo autem
+							possimus. Similique, culpa ab incidunt quas aut
+							ipsum fuga. Voluptate repellat sapiente corrupti
+							modi.
+						</p>
+						<button
+							class="mt-4 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded"
+							>Learn More
+						</button>
+					</div>
+				</div>
+				
+			</section>
+
+			<!-- Das Dreieck wird hier eingefügt DK4 -->
+				<img class="absolute botoom-[0px]  left-0 right-0 h-[100px] w-full  rotate-180 scale-y-[-1] "  src={dk4.src} alt="">
+		
+		</div>
+		
+		<!-- youtube videos -->
+
+	</main>
 	
-
-
 </Layout>
 
 <style>
-	h1 {
-		position: relative;
-		z-index: 9;
-		top: -740px;
-		color: rgb(194, 188, 188);
-		color:;
-		width: 10rem;
-		height: auto;
-	}
+
+
 </style>
