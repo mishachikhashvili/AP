@@ -13,11 +13,10 @@ import logo from "../assets/logo3.svg";
     <input type="checkbox" id="menu-toggle" class="menu-toggle hidden" />
     <label
       for="menu-toggle"
-      class="icon block cursor-pointer text-2xl  md:hidden"
+      class="icon block cursor-pointer text-2xl  md:hidden mt-[-9rem]"
     >
       &#9776;
     </label>
-
     <!-- Menu -->
     <ul
       class="menu hidden flex-col absolute top-full left-0 w-full shadow-lg md:flex md:flex-row md:space-x-4 md:static md:w-auto md:shadow-none"
@@ -29,9 +28,8 @@ import logo from "../assets/logo3.svg";
         <a href="#ft" class="text-gray-700 hover:text-gray-700">ِKontakt</a>
       </li>
       <li class="list-item text-2xl">
-        <a href="./bucher.html" class="text-gray-700 hover:text-white-900"
-          >Kurs</a
-        >
+        <a href="/touren" class="text-gray-700 hover:text-white-900"
+          >Touren</a>
       </li>
       <li class="list-item text-2xl">
         <a href="/galerie" class="text-gray-700 hover:text-white-900">Galerie</a
@@ -41,7 +39,7 @@ import logo from "../assets/logo3.svg";
   </nav>
 
   <h1
-    class="absolute top-[10%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl md:text-4xl font-bold md:top-[20%] md:left-[50%]"
+    class="absolute top-[10%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl md:text-5xl font-bold md:top-[20%] md:left-[50%]"
   >GEORGIEN
   </h1>
 </header>
@@ -51,9 +49,9 @@ import logo from "../assets/logo3.svg";
   header {
     background-image: url(../assets/images/266.jpg);
     background-size: cover;
-    background-position: center center; /* Bild immer in der Mitte ausrichten */
+    background-position:center center; /* Bild immer in der Mitte ausrichten */
     width: 100%;
-    height: 35vh; /* Höhe anpassen, damit mehr vom Bild sichtbar ist */
+    height: 50vh; /* Höhe anpassen, damit mehr vom Bild sichtbar ist */
   }
 
   @media (min-width: 768px) {
@@ -71,12 +69,12 @@ import logo from "../assets/logo3.svg";
   /* Menü: Mobile */
   .menu {
     display: none;
-    top: 13rem;
+    top: 22rem;
     left: 50%;
     transform: translateX(-50%);
     width: 50vw;
     height: auto;
-    color: black;
+    color: white;
     padding: 1rem;
     border-radius: 0.5rem;
     z-index: 100;
