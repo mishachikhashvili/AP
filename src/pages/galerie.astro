@@ -1,0 +1,126 @@
+---
+import Layout from "../layouts/Layout.astro";
+import eins from "../assets/images/1.jpg";
+import zwei from "../assets/images/2.jpg";
+import drei from "../assets/images/3.jpg";
+import vier from "../assets/images/4.jpg";
+import fünf from "../assets/images/5.jpg";
+import sechs from "../assets/images/6.jpg";
+import sieben from "../assets/images/7.jpg";
+import acht from "../assets/images/8.jpg";
+import neun from "../assets/images/9.jpg";
+import zehn from "../assets/images/10.jpg";
+import elf from "../assets/images/11.jpg";
+import zwölf from "../assets/images/12.jpg";
+import dreizehn from "../assets/images/13.jpg";
+import vierzehn from "../assets/images/14.jpg";
+import fünfzehn from "../assets/images/15.jpg";
+import sechzehn from "../assets/images/16.jpg";
+import siebzehn from "../assets/images/17.jpg";
+import achtzehn from "../assets/images/18.jpg";
+import neunzehn from "../assets/images/19.jpg";
+import zwanzig from "../assets/images/20.jpg";
+---
+
+<Layout>
+    <div class="gallery">
+        <div class="item big"><img src={eins.src} alt=""></div>
+        <div class="item"><img src={zwei.src} alt=""></div>
+        <div class="item tall"><img src={drei.src} alt=""></div>
+        <div class="item wide"><img src={vier.src} alt=""></div>
+        <div class="item"><img src={fünf.src} alt=""></div>
+        <div class="item big"><img src={sechs.src} alt=""></div>
+        <div class="item wide"><img src={sieben.src} alt=""></div>
+        <div class="item"><img src={acht.src} alt=""></div>
+        <div class="item tall"><img src={neun.src} alt=""></div>
+        <div class="item"><img src={zehn.src} alt=""></div>
+        <div class="item big"><img src={elf.src} alt=""></div>
+        <div class="item wide"><img src={zwölf.src} alt=""></div>
+        <div class="item tall"><img src={dreizehn.src} alt=""></div>
+        <div class="item"><img src={vierzehn.src} alt=""></div>
+        <div class="item big"><img src={fünfzehn.src} alt=""></div>
+        <div class="item tall"><img src={sechzehn.src} alt=""></div>
+        <div class="item wide"><img src={siebzehn.src} alt=""></div>
+        <div class="item"><img src={achtzehn.src} alt=""></div>
+        <div class="item big"><img src={neunzehn.src} alt=""></div>
+        <div class="item wide"><img src={zwanzig.src} alt=""></div>
+        <div class="item"><img src={vierzehn.src} alt=""></div>
+        <div class="item big"><img src={fünfzehn.src} alt=""></div>
+        <div class="item tall"><img src={sechzehn.src} alt=""></div>
+        <div class="item wide"><img src={siebzehn.src} alt=""></div>
+        <div class="item"><img src={achtzehn.src} alt=""></div>
+        <div class="item big"><img src={neunzehn.src} alt=""></div>
+        <div class="item wide"><img src={zwanzig.src} alt=""></div>
+        <div class="item"><img src={vierzehn.src} alt=""></div>
+        <div class="item big"><img src={fünfzehn.src} alt=""></div>
+        <div class="item tall"><img src={sechzehn.src} alt=""></div>
+        <div class="item wide"><img src={siebzehn.src} alt=""></div>
+        <div class="item"><img src={achtzehn.src} alt=""></div>
+        
+       
+      </div>
+</Layout>
+
+
+
+<style>
+ 
+
+ body {
+    background:gray;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gallery {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    margin: 20px;
+    grid-auto-flow: dense;
+    justify-content: center;
+  }
+
+  .gallery .item {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .gallery .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .gallery .item:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .gallery .item.big {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .gallery .item.wide {
+    grid-column: span 2;
+  }
+
+  .gallery .item.tall {
+    grid-row: span 2;
+  }
+
+  @media (min-width: 1024px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-auto-rows: 250px;
+    }
+  }
+ 
+
+</style>

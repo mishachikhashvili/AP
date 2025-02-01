@@ -24,8 +24,8 @@
 
 
 
-h1 {
+h5 {
     color: var(--primary-color);
     font-family: 'Jura';
-    font-size: 50px;
+    font-size: 0px;
 }

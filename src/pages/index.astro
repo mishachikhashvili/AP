@@ -7,7 +7,7 @@ import dk1 from "../assets/dk1.svg";
 import dk2 from "../assets/dk2.svg";
 import dk3 from "../assets/dk3.svg";
 import dk4 from "../assets/dk4.svg";
-
+import dk5 from "../assets/dk5.svg";
 ---
 
 <Layout>
@@ -17,42 +17,41 @@ import dk4 from "../assets/dk4.svg";
 
 			<section class="relative bg-[#4c5c96] text-center text-white py-16">
 				<!-- Das Dreieck wird hier eingefügt  DK1-->
-				<img class="absolute top-[-100px] left-0 right-0 h-[100px] w-full"  src={dk1.src} alt="">
+				<img
+					class="absolute top-[-100px] left-0 right-0 h-[100px] w-full"
+					src={dk1.src}
+					alt=""
+				/>
 
-				<div class="relative  container mx-auto px-4 md:flex md:flex-row-reverse">
-					<img
-						class="w-[16rem] h-[16rem] rounded-full object-cover mx-auto mb-4 md:mb-0"
-						src={zwanzig.src}
-						alt=""
-					/>
-					<div class="md:p-[5rem]">
-						<h2 class="text-xl font-bold">Magna Arcu Feugiat</h2>
-						<p class="mt-2">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Culpa eveniet nostrum unde, cupiditate
-							distinctio natus iste labore cumque porro
-							voluptatibus dolorum maiores recusandae quod
-							consequuntur voluptatum aspernatur minima enim
-							tenetur? Ipsum, provident repellendus? Voluptates
-							modi nostrum quo consequatur vero doloribus.
-						</p>
-						<button
-							class="mt-4 md:mb-1 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded"
-						>Learn More
-						</button>
-					</div>
-				</div>
+			<div class="relative container mx-auto px-4 md:flex md:flex-row-reverse">
+    <img class="w-[16rem] h-[16rem] rounded-full object-cover mx-auto mb-4 md:mb-0" src={zwanzig.src} alt="Georgien Bild"/>
+    <div class="md:p-[5rem]">
+        <h2 class="text-xl font-bold">Erlebe Georgien</h2>
+        <p id="intro-text" class="mt-2">
+            Georgien, ein Land an der Grenze zwischen Europa und Asien, fasziniert durch seine reiche Kultur und Geschichte. Die Hauptstadt Tiflis besticht durch ihre malerische Altstadt, und das Land bietet eine atemberaubende Vielfalt an Landschaften – von den schneebedeckten Bergen des Kaukasus bis hin zu den Weinbergen im Osten. Entdecke die Gastfreundschaft der Georgier und die atemberaubende Natur.
+        </p>
+        <p id="more-text" class="mt-2 hidden">
+            Georgien ist auch bekannt für seine jahrtausendealte Weintradition, die als die älteste der Welt gilt. Das Land hat eine vielfältige kulinarische Landschaft, die sowohl europäische als auch asiatische Einflüsse aufgreift. Neben den kulturellen und gastronomischen Erlebnissen bietet Georgien auch zahlreiche Abenteuer für Outdoor-Enthusiasten, wie Wandern, Bergsteigen und Wassersport.
+        </p>
+        <button
+            class="mt-4 md:mb-1 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded"
+            onclick="toggleText()">
+            Learn More
+        </button>
+    </div>
+</div>
 			</section>
 
 			<!-- Inhaltselemente 2 -->
 			<section class="relative bg-[#45558d] text-center text-white py-16">
-				
 				<!-- Das Dreieck wird hier eingefügt DK2 -->
-				<img class="absolute top-[0px]  left-0 right-0 h-[100px] w-full  rotate-180 scale-y-[-1] "  src={dk2.src} alt="">
+				<img
+					class="absolute top-[0px] left-0 right-0 h-[100px] w-full rotate-180 scale-y-[-1]"
+					src={dk2.src}
+					alt=""
+				/>
 
-
-				<div class="relative z-10 container mx-auto px-4 md:flex">
-					
+				<div class="relative  container mx-auto px-4 md:flex">
 					<img
 						class="w-[16rem] h-[16rem] rounded-full object-cover mx-auto mb-4"
 						src={fünf.src}
@@ -82,11 +81,16 @@ import dk4 from "../assets/dk4.svg";
 			<!-- Inhaltselemente 3 -->
 
 			<section class="relative bg-[#3f4e85] text-center text-white py-16">
-
 				<!-- Das Dreieck wird hier eingefügt DK3 -->
-				<img class="absolute top-[-100px] left-0 right-0 h-[100px] w-full"  src={dk3.src} alt="">
+				<img
+					class="absolute top-[-100px] left-0 right-0 h-[100px] w-full"
+					src={dk3.src}
+					alt=""
+				/>
 
-				<div class="relative z-10 container mx-auto px-4 md:flex md:flex-row-reverse">
+				<div
+					class="relative z-10 container mx-auto px-4 md:flex md:flex-row-reverse"
+				>
 					<img
 						class="w-[16rem] h-[16rem] rounded-full object-cover mx-auto mb-4 md:mb-0"
 						src={drei.src}
@@ -110,21 +114,149 @@ import dk4 from "../assets/dk4.svg";
 						</button>
 					</div>
 				</div>
-				
 			</section>
 
 			<!-- Das Dreieck wird hier eingefügt DK4 -->
-				<img class="absolute botoom-[0px]  left-0 right-0 h-[100px] w-full  rotate-180 scale-y-[-1] "  src={dk4.src} alt="">
-		
+			<img
+				class="absolute botoom-[0px] left-0 right-0 h-[100px] w-full rotate-180 scale-y-[-1]"
+				src={dk4.src}
+				alt=""
+			/>
 		</div>
-		
+
 		<!-- youtube videos -->
 
+		<section class="youtube relativ bg-[#2e3141]">
+			<div class="container mx-auto py-10 px-4">
+				<h1 class="text-2xl mt-4 md:text-4xl font-bold text-centermt-9 mb-5 text-gray-50">
+					Entdecke Georgien
+				</h1>
+				<div
+					class="grid grid-cols-1 md:grid-cols-2 gap-6 text-center bg-[#353849]"
+				>
+					<!-- Card 1 -->
+					<div
+						class="bg-gray-800 rounded-xl shadow-lg overflow-hidden"
+					>
+						<iframe
+							class="border-[2px] ml-auto mr-auto  mt-7 rounded-lg"
+							width="80%"
+							height="320"
+							src="https://www.youtube.com/embed/gBTZBPQNJco?si=HsicaFkWtgRDY0lZ"
+							title="YouTube video player"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin"
+							allowfullscreen
+						>
+						</iframe>
+
+						<div class="p-4">
+							<h2 class="text-xl font-bold mb-2  text-blue-500">
+								Winter in Georgien
+							</h2>
+							<p class="text-gray-400 mb-4">
+								Ein Winter voller Schnee, Traditionen und unvergesslicher Momente.
+							</p>
+							<button
+								class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded"
+								>Mehr erfahren</button
+							>
+						</div>
+					</div>
+
+					<!-- Card 2 -->
+					<div
+						class="bg-gray-800 rounded-xl shadow-lg overflow-hidden"
+					>
+						<iframe
+							class="border-[2px] ml-auto mr-auto  mt-7 rounded-lg"
+							width="80%"
+							height="320"
+							src="https://www.youtube.com/embed/3zSdXP_RihU?si=VBgCkvXIlbxWZwJB"
+							title="YouTube video player"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin"
+							allowfullscreen></iframe>
+
+						<div class="p-4">
+							<h2 class="text-xl font-bold mb-2  text-blue-500">
+								Sommer in Georgien
+							</h2>
+							<p class="text-gray-400 mb-4 ">
+								Ein Sommer voller Abenteuer, Kultur und unvergesslicher Erlebnisse.
+							</p>
+							<button
+								class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded"
+								>Mehr erfahren</button
+							>
+						</div>
+					</div>
+
+					<!-- Card 3 -->
+					<div
+						class="bg-gray-800 rounded-xl shadow-lg overflow-hidden"
+					>
+						<iframe
+							class="border-[2px] ml-auto mr-auto  mt-7 rounded-lg"
+							width="80%"
+							height="320"
+							src="https://www.youtube.com/embed/m7QpAoCHFA8?si=kgFfsOxb4H9OMKFH"
+							title="YouTube video player"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin"
+							allowfullscreen></iframe>
+
+						<div class="p-4">
+							<h2 class="text-xl font-bold mb-2  text-blue-500">
+								Georgische Tänze
+							</h2>
+							<p class="text-gray-400 mb-4 ">
+								Tradition, Leidenschaft und Eleganz in Bewegung.
+							</p>
+							<button
+								class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded"
+								>Mehr erfahren</button
+							>
+						</div>
+					</div>
+
+					<!-- Card 4 -->
+					<div
+						class="bg-gray-800 rounded-xl shadow-lg overflow-hidden"
+					>
+						<iframe class="border-[2px] ml-auto mr-auto  mt-7 rounded-lg"
+							width="80%"
+							height="320"
+							src="https://www.youtube.com/embed/XRchqLy1ToA?si=dMBN6T_o7TxPPMus"
+							title="YouTube video player"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin"
+							allowfullscreen></iframe>
+
+						<div class="p-4">
+							<h2 class="text-xl font-bold mb-2 text-blue-500">
+								Farben Georgiens
+							</h2>
+							<p class="text-gray-400 mb-4">
+								Ein Land voller Farben, das die Seele berührt.
+							</p>
+							<button
+								class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded"
+								>Mehr erfahren</button
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img
+				class="absolute botoom-[0px] left-0 right-0 h-[100px] w-full rotate-[-180] scale-y-[-1]"
+				src={dk5.src}
+				alt=""
+			/>
+		</section>
 	</main>
-	
+
+	<style>
+		
+	</style>
 </Layout>
-
-<style>
-
-
-</style>

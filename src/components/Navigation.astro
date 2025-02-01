@@ -16,8 +16,8 @@ import logo from "../assets/logo3.svg";
         
 
         <!-- Input for Hamburger Menu -->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle hidden" />
-        <label for="menu-toggle" class="icon block cursor-pointer text-2xl md:hidden">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle hidden " />
+        <label for="menu-toggle" class="icon block cursor-pointer text-2xl md:hidden ">
             &#9776;
         </label>
 
@@ -26,19 +26,25 @@ import logo from "../assets/logo3.svg";
             class="menu hidden flex-col absolute top-full left-0 w-full shadow-lg md:flex md:flex-row md:space-x-4 md:static md:w-auto md:shadow-none"
         >
             <li class="list-item text-2xl">
-                <a href="" class="text-gray-700 hover:text-gray-700">ِAbout</a>
+                <a href="/" class="text-gray-700 hover:text-white-900">Haupt</a>
             </li>
             <li class="list-item text-2xl">
-                <a href="./personen.html" class="text-gray-700 hover:text-white-900">Books</a>
+                <a href="#ft" class="text-gray-700 hover:text-gray-700">ِKontakt</a>
             </li>
             <li class="list-item text-2xl">
                 <a href="./bucher.html" class="text-gray-700 hover:text-white-900">Kurs</a>
             </li>
             <li class="list-item text-2xl">
-                <a href="./bucher.html" class="text-gray-700 hover:text-white-900">Gallery</a>
+                <a href="/galerie" class="text-gray-700 hover:text-white-900">Galerie</a>
             </li>
         </ul>
     </nav>
+
+    <h1 class="absolute top-[15%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl md:text-5xl font-bold ">
+        GEORGIEN
+    </h1>
+    
+
 </header>
 
 <style>
@@ -46,37 +52,40 @@ import logo from "../assets/logo3.svg";
     header {
 
         background-image: 
-        linear-gradient(rgba(73, 78, 90, 0.6), rgba(73, 78, 90, 0.6)), /* Farbschicht */
-        url(../assets/images/26.jpg); /* Bild */
+         /* Farbschicht */
+        url(../assets/images/266.jpg); /* Bild */
         background-size: cover;
         background-position: center;
         width: 100%;
-        height: 80vh;
+        height: 70vh;
        
     }
+
+   
 
     /* Hamburger Menu Logic */
     .menu-toggle:checked ~ .menu {
         display: flex;
+      
     }
 
     /* Menü: Mobile */
     .menu {
         display: none;
-        top: 9rem;
-        right: 2rem;
-        left: 12rem;
+        top: 13rem;
+        left: 50%;
+        transform: translateX(-50%);
         width: 50vw;
         height: auto;
         color: black;
         padding: 1rem;
         border-radius: 0.5rem;
         z-index: 100;
-        background-image: url(../src/assets/images/DJI.jpg);
+        background-image: url(../src/assets/images/25.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: ;
         width: 50%;
-        height: 38vh;
+        height: 30vh;
     }
 
     .menu li {
@@ -84,7 +93,7 @@ import logo from "../assets/logo3.svg";
     }
 
     a {
-        color: rgb(194, 188, 188);
+        color: black;
         display: block;
         padding: 0.5rem;
         transition: color 0.3s ease;
@@ -111,12 +120,14 @@ import logo from "../assets/logo3.svg";
     @media (min-width: 768px) {
         .menu {
             display: flex;
-            justify-content: end;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-image: none;
+        justify-content: end;
+        position: static; /* Verhindert absolute Positionierung */
+        width: auto;
+        height: auto;
+        background-image: none;
+        left: auto;
+        right: 0;
+        transform: none;
         }
 
         .menu li:hover {

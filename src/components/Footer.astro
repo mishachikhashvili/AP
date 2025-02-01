@@ -1,23 +1,23 @@
 
 
 
-<footer class="bg-gray-900 text-gray-400">
+<footer id="ft" class="bg-gray-900 text-gray-400">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row justify-between p-10">
+    <div class="flex flex-col md:flex-row justify-between p-22 text-2xl">
       <!-- Kontaktformular -->
-      <div class="w-full md:w-1/2 mb-8 md:mb-0">
-        <h2 class="text-white text-lg font-semibold mb-4">Get in Touch</h2>
-        <p class="mb-6 text-sm">
+      <div class="w-full md:w-1/2 mb-8 md:mb-0 mr-12">
+        <h2 class="text-white text-2xl font-semibold mt-[7rem]">Get in Touch</h2>
+        <p class="mb-6 text-sm ">
           Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
           Phasellus non pulvinar erat.
         </p>
         <form>
           <div class="mb-4">
             <label class="block text-sm font-medium mb-1" for="name">Name</label>
-            <input
+            <input 
               type="text"
               id="name"
-              class="w-full px-4 py-2 border border-gray-700 bg-gray-800 text-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-500"/>
+              class="w-full px-4 py-2 border border-gray-700 bg-gray-800 text-gray-300  rounded focus:outline-none focus:ring focus:ring-blue-500"/>
           </div>
           <div class="mb-4">
             <label class="block text-sm font-medium mb-1" for="email"
@@ -45,7 +45,7 @@
       </div>
 
       <!-- Kontaktinformationen -->
-      <div class="w-full md:w-1/2 mt-9 ml-20">
+      <div class="w-full md:w-1/2 mt-[7rem] ">
         <ul class="space-y-5 mt-9">
           <li class="flex items-center">
             <span class="mr-4 text-gray-500">🏠</span>
@@ -78,15 +78,18 @@
           </li>
         </ul>
         <br />
-        <a href="/post/datenschutz">Datenschutz</a>
+        <a class="ml-11 hover:underline" href="/post/datenschutz">Datenschutz</a>
         <br>
-        <a href="/post/datenschutz">Impresum</a>
+        <br>
+        <a class="ml-11 hover:underline" href="/post/datenschutz">Impresum</a>
       </div>
     </div>
     <div class="mt-8 border-t border-gray-700 pt-4 text-sm text-center">
       © Untitled Inc. All rights reserved.
     </div>
   </div>
+
+
 
 </footer>
 
@@ -102,7 +105,7 @@
     height: auto;
   }
 
-  label, a, span {
+  label, a, span, p {
     color: white;
   }
 
