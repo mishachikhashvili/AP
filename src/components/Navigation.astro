@@ -10,13 +10,15 @@ import logo from "../assets/logo3.svg";
     </a>
 
     <!-- Input for Hamburger Menu Logos mozraoba-->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle hidden" />
+    <input type="checkbox" id="menu-toggle" class="menu-toggle hidden" aria-label="Toggle menu" />
     <label
       for="menu-toggle"
-      class="icon block cursor-pointer text-2xl  md:hidden mt-[-2rem]" 
+      class="icon block cursor-pointer md:hidden mt-[-2rem]"
+      aria-hidden="true"
     >
       &#9776;
     </label>
+    
     <!-- Menu -->
     <ul
       class="menu hidden flex-col absolute top-full left-0 w-full shadow-lg md:flex md:flex-row md:space-x-4 md:static md:w-auto md:shadow-none"
@@ -68,6 +70,7 @@ import logo from "../assets/logo3.svg";
 
   /* Menü: Mobile */
   .menu {
+    position: fixed;
     display: none;
     top: 22rem;
     left: 50%;
