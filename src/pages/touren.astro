@@ -1,21 +1,188 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
+import drei from "../assets/images/48.jpg";
+import batumi from "../assets/images/5.jpg";
+import sky from "../assets/images/40.jpg";
+import wandern from "../assets/images/32.jpg";
 ---
 
-
-
 <Layout>
-
-
-
-
-
-
-
-
-
-
-
+ 
+    <main class="bg-gray-400">
+        <!-- SECTION 1 WEIN -->
+        <section class="flex justify-center py-8 border-gray-100">
+            <div class="w-[90vw] max-w-none flex flex-col md:flex-row shadow-2xl rounded-3xl overflow-hidden bg-gray-100">
+              <!-- Bild mit sanftem Schatten und Hover-Effekt -->
+              <div class="w-full md:w-1/2 relative overflow-hidden">
+                <img src={drei.src} alt="Weintour in Georgien" class="w-full h-full object-cover rounded-3xl transform transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl"/>
+              </div>
+          
+              <!-- Inhalt -->
+              <div class="w-full md:w-1/2 p-12 flex flex-col justify-between border-l border-gray-200 bg-gray-200">
+                <h2 class="text-4xl font-extrabold text-gray-900">🍷 Reise vor 8000 Jahren zurück ins Heimatland des Weins: Georgien</h2>
+                <p class="text-gray-800 leading-relaxed">
+                  Georgien ist das älteste Weinland der Welt, offiziell anerkannt von der UNESCO. Seit über 8000 Jahren wird hier Wein angebaut. Auf dieser exklusiven Tour tauchst du in die faszinierende Geschichte des georgischen Weins ein und entdeckst die Weinkeller, die dieses Erbe bewahren.
+                </p>
+          
+                <div class="text-gray-800 font-medium space-y-2">
+                  <p>📍 <span class="text-blue-500">Ort:</span> Kachetien, Georgien</p>
+                  <p>⏳ <span class="text-blue-500">Dauer:</span> 3 Tage / 2 Nächte</p>
+                  <p>🏨 <span class="text-blue-500">Unterkunft:</span> 4-Sterne Weinhotel</p>
+                  <p>🍽️ <span class="text-blue-500">Inklusive:</span> Frühstück, Mittagessen und 3 exklusive Weinverkostungen</p>
+                  <p class="text-2xl font-bold text-gray-900 mt-4">💰 Preis: <span class="text-blue-500">299€ pro Person</span></p>
+                </div>
+          
+                <!-- Highlights -->
+                <div class="border-t border-gray-300 pt-4">
+                  <h3 class="text-xl font-semibold text-gray-800 mb-2">✨ Highlights:</h3>
+                  <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                    <li>Besuch der berühmten Weinkeller und Weinberge in Kachetien</li>
+                    <li>Weinverkostungen mit Experten</li>
+                    <li>Geführte Wanderung durch malerische Weinberge</li>
+                    <li>Traditionelles georgisches Abendessen</li>
+                  </ul>
+                </div>
+          
+                <!-- Button "Jetzt Buchen" -->
+                <div class="mt-8">
+                  <a href="#" class="inline-block text-center bg-blue-600 text-white px-6 py-4 text-lg font-semibold rounded-xl shadow-lg hover:bg-blue-500 transition w-full">Jetzt Buchen 🍷</a>
+                </div>
+              </div>
+            </div>
+          </section>
     
+           <!-- SECTION 2 WANDERN -->
+          <section class="flex justify-center py-4 border-gray-100">
+            <div class="w-[90vw] max-w-none flex flex-col md:flex-row shadow-2xl rounded-3xl overflow-hidden bg-gray-100">
+              <!-- Bild mit sanftem Schatten und Hover-Effekt -->
+              <div class="w-full md:w-1/2 relative overflow-hidden">
+                <img src={wandern.src} alt="Wanderung im Kaukasus" class="w-full h- object-cover rounded-3xl transform transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl"/>
+              </div>
+          
+              <!-- Inhalt -->
+              <div class="w-full md:w-1/2 p-12 flex flex-col justify-between border-l border-gray-200 bg-gray-200">
+                <h2 class="text-4xl font-extrabold text-gray-900">🏞️ Wandern im Kaukasus: Entdecke die höchsten Gipfel Georgiens</h2>
+                <p class="text-gray-800 leading-relaxed">
+                  Der Kaukasus ist ein wahres Paradies für Wanderer. Mit über 5.000 Meter hohen Gipfeln und einer atemberaubenden Landschaft bietet dieser Ort unvergessliche Erlebnisse. Diese Tour führt dich durch einige der höchsten Berge Europas, vorbei an Gletschern, alten Dörfern und unberührter Natur. Erlebe die majestätischen Ausblicke und die aufregenden Wanderungen in einem der spektakulärsten Gebirgsmassive der Welt.
+                </p>
+          
+                <div class="text-gray-800 font-medium space-y-2">
+                  <p>📍 <span class="text-blue-500">Ort:</span> Kaukasus, Georgien</p>
+                  <p>⏳ <span class="text-blue-500">Dauer:</span> 5 Tage / 4 Nächte</p>
+                  <p>🏨 <span class="text-blue-500">Unterkunft:</span> Gebirgshütten und Gästehäuser</p>
+                  <p>🍽️ <span class="text-blue-500">Inklusive:</span> Frühstück, Mittagessen und Snacks für die Wanderung</p>
+                  <p class="text-2xl font-bold text-gray-900 mt-4">💰 Preis: <span class="text-blue-500">499€ pro Person</span></p>
+                </div>
+          
+                <!-- Highlights -->
+                <div class="border-t border-gray-300 pt-4">
+                  <h3 class="text-xl font-semibold text-gray-800 mb-2">✨ Highlights:</h3>
+                  <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                    <li>Wanderung durch die höchsten Gipfel des Kaukasus</li>
+                    <li>Über 5.000 Meter hohe Berge und atemberaubende Ausblicke</li>
+                    <li>Besuch abgelegener Dörfer und traditioneller Bergkultur</li>
+                    <li>Übernachtung in gemütlichen Gebirgshütten</li>
+                  </ul>
+                </div>
+          
+                <!-- Button "Jetzt Buchen" -->
+                <div class="mt-8">
+                  <a href="#" class="inline-block text-center bg-blue-600 text-white px-6 py-4 text-lg font-semibold rounded-xl shadow-lg hover:bg-blue-500 transition w-full">Jetzt Buchen 🏞️</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 3 SKI -->
+<section class="flex justify-center py-4 border-gray-100">
+    <div class="w-[90vw] max-w-none flex flex-col md:flex-row shadow-2xl rounded-3xl overflow-hidden bg-gray-100">
+        <!-- Bild mit sanftem Schatten und Hover-Effekt -->
+        <div class="w-full md:w-1/2 relative overflow-hidden">
+            <img src={sky.src} alt="Skiurlaub in Georgien" class="w-full h-full object-cover rounded-3xl transform transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl"/>
+        </div>
+    
+        <!-- Inhalt -->
+        <div class="w-full md:w-1/2 p-12 flex flex-col justify-between border-l border-gray-200 bg-gray-200">
+            <h2 class="text-4xl font-extrabold text-gray-900">⛷️ Skiurlaub in Georgien: Entdecke moderne Skigebiete in den Kaukasusbergen</h2>
+            <p class="text-gray-800 leading-relaxed">
+                Georgien bietet einige der besten Skigebiete in Europa, die mit modernen Liftanlagen und hervorragenden Pisten begeistern. Die Kaukasusregion ist ein wahres Paradies für Skifahrer und Snowboarder. Besonders bekannt sind die Skigebiete Gudauri, Bakuriani und Mitarbi, die nicht nur für ihre atemberaubenden Ausblicke, sondern auch für ihre erstklassigen Einrichtungen und die Möglichkeit, bei noch unentdecktem Schneevergnügen zu fahren, bekannt sind. Entdecke das Winterwunderland Georgiens!
+            </p>
+    
+            <div class="text-gray-800 font-medium space-y-2">
+                <p>📍 <span class="text-blue-500">Ort:</span> Gudauri, Bakuriani, Mitarbi, Georgien</p>
+                <p>⏳ <span class="text-blue-500">Dauer:</span> 7 Tage / 6 Nächte</p>
+                <p>🏨 <span class="text-blue-500">Unterkunft:</span> Komfortable Hotels und Skihütten</p>
+                <p>🍽️ <span class="text-blue-500">Inklusive:</span> Frühstück, Mittagessen und Skipässe</p>
+                <p class="text-2xl font-bold text-gray-900 mt-4">💰 Preis: <span class="text-blue-500">799€ pro Person</span></p>
+            </div>
+    
+            <!-- Highlights -->
+            <div class="border-t border-gray-300 pt-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">✨ Highlights:</h3>
+                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                    <li>Modernste Liftanlagen in Gudauri, Bakuriani und Mitarbi</li>
+                    <li>Weite, gut präparierte Pisten für alle Schwierigkeitsgrade</li>
+                    <li>Wunderschöne Ausblicke auf die Kaukasusberge</li>
+                    <li>Gemütliche Après-Ski-Lounges und Restaurants</li>
+                </ul>
+            </div>
+    
+            <!-- Button "Jetzt Buchen" -->
+            <div class="mt-8">
+                <a href="#" class="inline-block text-center bg-blue-600 text-white px-6 py-4 text-lg font-semibold rounded-xl shadow-lg hover:bg-blue-500 transition w-full">Jetzt Buchen ⛷️</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 4 SOMMERURLAUB AM SCHWARZEN MEER -->
+<section class="flex justify-center py-4 border-gray-100">
+    <div class="w-[90vw] max-w-none flex flex-col md:flex-row shadow-2xl rounded-3xl overflow-hidden bg-gray-100">
+        <!-- Bild mit sanftem Schatten und Hover-Effekt -->
+        <div class="w-full md:w-1/2 relative overflow-hidden">
+            <img src={batumi.src} alt="Sommerurlaub am Schwarzen Meer" class="w-full h-full object-cover rounded-3xl transform transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl"/>
+        </div>
+    
+        <!-- Inhalt -->
+        <div class="w-full md:w-1/2 p-12 flex flex-col justify-between border-l border-gray-200 bg-gray-200">
+            <h2 class="text-4xl font-extrabold text-gray-900">🌊 Sommerurlaub am Schwarzen Meer: Entspannung in Georgien</h2>
+            <p class="text-gray-800 leading-relaxed">
+                Die Küste des Schwarzen Meeres in Georgien bietet atemberaubende Strände, malerische Städte und unvergessliche Erlebnisse. Von der historischen Stadt Batumi bis hin zu den ruhigen Küstenorten ist diese Region ein wahres Paradies für Sonnenanbeter und Wassersportliebhaber. Genieße den warmen Sommer, das türkisfarbene Wasser und die leckeren georgischen Spezialitäten direkt am Strand. Verbringe unvergessliche Tage in dieser wunderschönen Region!
+            </p>
+    
+            <div class="text-gray-800 font-medium space-y-2">
+                <p>📍 <span class="text-blue-500">Ort:</span> Batumi, Schwarzmeerküste, Georgien</p>
+                <p>⏳ <span class="text-blue-500">Dauer:</span> 7 Tage / 6 Nächte</p>
+                <p>🏨 <span class="text-blue-500">Unterkunft:</span> Strandhotels und Resorts</p>
+                <p>🍽️ <span class="text-blue-500">Inklusive:</span> Frühstück, Mittagessen und geführte Stadttouren</p>
+                <p class="text-2xl font-bold text-gray-900 mt-4">💰 Preis: <span class="text-blue-500">499€ pro Person</span></p>
+            </div>
+    
+            <!-- Highlights -->
+            <div class="border-t border-gray-300 pt-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">✨ Highlights:</h3>
+                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                    <li>Besuch der historischen Stadt Batumi mit ihren modernen und traditionellen Sehenswürdigkeiten</li>
+                    <li>Entspannen an den wunderschönen Stränden des Schwarzen Meeres</li>
+                    <li>Wassersportaktivitäten wie Jet-Ski, Windsurfen und Parasailing</li>
+                    <li>Genuss von georgischer Küche und frischen Meeresfrüchten am Strand</li>
+                </ul>
+            </div>
+    
+            <!-- Button "Jetzt Buchen" -->
+            <div class="mt-8">
+                <a href="#" class="inline-block text-center bg-blue-600 text-white px-6 py-4 text-lg font-semibold rounded-xl shadow-lg hover:bg-blue-500 transition w-full">Jetzt Buchen 🌊</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+    
+
 </Layout>
+
+<style>
+
+</style>
