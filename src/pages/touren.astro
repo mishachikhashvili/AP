@@ -2,8 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import drei from "../assets/images/48.jpg";
 import batumi from "../assets/images/5.jpg";
-import sky from "../assets/images/40.jpg";
+import skiee from "../assets/images/skiee.jpg";
 import wandern from "../assets/images/32.jpg";
+import tb from "../assets/images/49.jpg";
 ---
 
 <Layout>
@@ -98,7 +99,7 @@ import wandern from "../assets/images/32.jpg";
     <div class="w-[90vw] max-w-none flex flex-col md:flex-row shadow-2xl rounded-3xl overflow-hidden bg-gray-200">
         <!-- Bild mit sanftem Schatten und Hover-Effekt -->
         <div class="w-full md:w-1/2 relative overflow-hidden p-5">
-            <img src={sky.src} alt="Skiurlaub in Georgien" class="w-full h-full object-contain rounded-3xl transform transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl"/>
+            <img src={skiee.src} alt="Skiurlaub in Georgien" class="w-full h-full object-contain rounded-3xl transform transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl"/>
         </div>
     
         <!-- Inhalt -->
@@ -176,6 +177,50 @@ import wandern from "../assets/images/32.jpg";
         </div>
     </div>
 </section>
+
+<!-- SECTION 5 WOCHENENDTRIP NACH TIFLIS -->
+<section class="flex justify-center py-4 border-gray-100">
+  <div class="w-[90vw] max-w-none flex flex-col md:flex-row shadow-2xl rounded-3xl overflow-hidden bg-gray-200">
+      <!-- Bild mit sanftem Schatten und Hover-Effekt -->
+      <div class="w-full md:w-1/2 relative overflow-hidden p-5">
+          <img src={tb.src} alt="Wochenendtrip nach Tiflis" class="w-full h-full object-contain rounded-3xl transform transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl"/>
+      </div>
+
+      <!-- Inhalt -->
+      <div class="w-full md:w-1/2 p-12 flex flex-col justify-between border-l border-gray-200 bg-gray-200">
+          <h2 class="text-4xl font-extrabold text-gray-900">🏛️ Wochenendtrip nach Tiflis: Kultur & Genuss</h2>
+          <p class="text-gray-800 leading-relaxed">
+              Erlebe ein unvergessliches Wochenende in Tiflis, der pulsierenden Hauptstadt Georgiens! Schlendere durch die malerischen Altstadtgassen, bestaune die Mischung aus antiker und moderner Architektur und genieße das Flair der charmanten Cafés und Restaurants. Entdecke die beeindruckenden Sehenswürdigkeiten, entspanne in den berühmten Schwefelbädern und lass dich von der georgischen Gastfreundschaft verzaubern. Ein Kurztrip voller Kultur, Kulinarik und Abenteuer!
+          </p>
+
+          <div class="text-gray-800 font-medium space-y-2">
+              <p>📍 <span class="text-blue-500">Ort:</span> Tiflis, Georgien</p>
+              <p>⏳ <span class="text-blue-500">Dauer:</span> 3 Tage / 2 Nächte</p>
+              <p>🏨 <span class="text-blue-500">Unterkunft:</span> Boutique-Hotels im Stadtzentrum</p>
+              <p>🍽️ <span class="text-blue-500">Inklusive:</span> Frühstück, Stadtführung & Weinverkostung</p>
+              <p class="text-2xl font-bold text-gray-900 mt-4">💰 Preis: <span class="text-blue-500">199€ pro Person</span></p>
+          </div>
+
+          <!-- Highlights -->
+          <div class="border-t border-gray-300 pt-4">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">✨ Highlights:</h3>
+              <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                  <li>Spaziergang durch die historische Altstadt mit ihren engen Gassen und bunten Häusern</li>
+                  <li>Besuch der berühmten Schwefelbäder für pure Entspannung</li>
+                  <li>Panoramablick von der Narikala-Festung über die Stadt</li>
+                  <li>Weinverkostung in einem traditionellen Weinkeller</li>
+                  <li>Erkundung des hippen Viertels Fabrika mit seinen coolen Cafés & Galerien</li>
+              </ul>
+          </div>
+
+          <!-- Button "Jetzt Buchen" -->
+          <div class="mt-8">
+              <a href="#" class="inline-block text-center bg-blue-600 text-white px-6 py-4 text-lg font-semibold rounded-xl shadow-lg hover:bg-blue-500 transition w-full">Jetzt Buchen 🏛️</a>
+          </div>
+      </div>
+  </div>
+</section>
+
 
 
     </main>
